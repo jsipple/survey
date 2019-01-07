@@ -1,0 +1,75 @@
+<!Doctype html>
+    <html lang="en">
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/survey.css">
+        </head>
+<body>
+    <h1 id="title">Survey Form</h1>
+        <p id="description">
+            Eligablity for trial
+        </p>
+        <form id="survey-form">
+            Name*: 
+            <input type="text" name="First-name" id="name-label" placeholder="Enter your name" required>
+            <br>
+            <br>
+            Email*:
+            <input type="email" name="Email" id="email-label" placeholder="Enter your email" required>
+            <br>
+            <br>
+            Phone number*:
+            <input type="number" name="number" id="phone-number" placeholder="enter your phone number" required pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}">
+            <br>
+            <br>
+            Blood type
+            <select id="dropdown">
+                <option value="blank"></option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <br>
+            <br>
+            <fieldset>
+                    <legend>Main reason you are applying for this trial</legend>
+                    <input id="Doctor" type="radio" name="favorite" value="Doctor">
+                        <label for="Doctor">Doctor recommended it</label>
+                        <br>
+                    <input id="online" type="radio" name="favorite" value="online">
+                        <label for="online">researched online</label>
+                        <br>
+                    <input id="cure" type="radio" name="favorite" value="cure">
+                        <label for="cure">Help find a cure</label>
+                        <br>
+                    <input id="personalized" type="radio" name="favorite" value="personalized">
+                        <label for="personalized">more personalized treatment</label>
+                        <br>
+                </fieldset>
+                <br>
+                <br>
+                Which drugs have you taken in the last year (Check all that apply):
+                <br>
+                <input type="checkbox" name="Acetaminophen" value="Acetaminophen">
+                    <label for="Acetaminophen">Acetaminophen</label>
+                    <br>
+                <input type="checkbox" name="Adderall" value="Adderall">
+                    <label for="Adderall">Adderall</label>
+                    <br>
+                <input type="checkbox" name="Xanax" value="Xanax">
+                    <label for="Xanax">Xanax</label>
+                    <br>
+                Any further information?
+                <br>
+                <textarea id="further-info" class="input-field" style="height:50px;resize:vertical;" name="further-info"
+                placeholder="Enter any further information we should know here..."></textarea>
+                <button id="submit" type="submit">submit</button>
+        </form>  
+        <script type="text/javascript" src="./assets/javascript/main.js"></script>
+    </body>
+</html>
